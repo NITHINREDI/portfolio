@@ -164,7 +164,7 @@ export default function App() {
         <div className="timeline">
           <div className="tl-item">
             <div className="tl-left">
-              <span className="tl-year">2022 – 23</span>
+              <span className="tl-year">Jan 2022 – May 23</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot" />
@@ -177,7 +177,7 @@ export default function App() {
 
           <div className="tl-item">
             <div className="tl-left">
-              <span className="tl-year">2020 – 22</span>
+              <span className="tl-year">Jan 2020 – Jan 2022</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot" />
@@ -205,7 +205,7 @@ export default function App() {
 
           <div className="tl-item tl-current">
             <div className="tl-left">
-              <span className="tl-year">2024 – now</span>
+              <span className="tl-year">Apr 2024 – now</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot tl-dot-active" />
