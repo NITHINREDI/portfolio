@@ -162,10 +162,9 @@ export default function App() {
           <h2>About</h2>
         </div>
         <div className="timeline">
-
           <div className="tl-item">
             <div className="tl-left">
-              <span className="tl-year">Jan 2020 – Jan 2022</span>
+              <span className="tl-year">2020 – 22</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot" />
@@ -178,7 +177,7 @@ export default function App() {
 
           <div className="tl-item">
             <div className="tl-left">
-              <span className="tl-year">Jan 2022 – May 23</span>
+              <span className="tl-year">2022 – 23</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot" />
@@ -188,8 +187,6 @@ export default function App() {
               <p>MS in Computer Science · 4.0/4.0 GPA</p>
             </div>
           </div>
-
-
 
           <div className="tl-item">
             <div className="tl-left">
