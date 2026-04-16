@@ -319,21 +319,161 @@ a {
 }
 
 /* ---------- About ---------- */
-.about-grid {
+/* ---------- About / Timeline ---------- */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tl-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  max-width: 100%;
+  grid-template-columns: 100px 40px 1fr;
+  align-items: start;
+  min-height: 80px;
 }
-.about-grid p {
-  font-size: 17px;
-  line-height: 1.75;
-  color: var(--ink);
+
+.tl-left {
+  text-align: right;
+  padding-top: 22px;
+  padding-right: 16px;
 }
-.about-grid strong {
+
+.tl-year {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  letter-spacing: 0.1em;
+}
+
+.tl-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.tl-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  background: var(--rule);
+}
+
+.tl-item:first-child .tl-line::before {
+  top: 28px;
+}
+
+.tl-item:last-child .tl-line::before {
+  bottom: calc(100% - 32px);
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--ink-dim);
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+  margin-top: 22px;
+  flex-shrink: 0;
+}
+
+.tl-dot-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(217, 122, 44, 0.4);
+}
+
+.tl-card {
+  padding: 16px 24px;
+  margin: 8px 0;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.tl-card:hover {
+  border-color: var(--ink-dim);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tl-card h3 {
+  font-family: var(--serif);
   font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.tl-card p {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  letter-spacing: 0.05em;
+}
+
+.tl-edu {
+  background: rgba(255, 255, 255, 0.03);
+  border-style: dashed;
+}
+
+.tl-card-active {
+  border-color: var(--accent);
+  background: rgba(217, 122, 44, 0.06);
+}
+
+.tl-card-active h3 {
   color: var(--accent-2);
   font-style: italic;
+}
+
+.tl-certs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-left: 140px;
+}
+
+.tl-cert {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 6px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-dim);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 720px) {
+  .tl-item {
+    grid-template-columns: 30px 1fr;
+  }
+  .tl-left {
+    display: none;
+  }
+  .tl-card::before {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .tl-item:nth-child(1) .tl-card::before { content: '2023'; }
+  .tl-item:nth-child(2) .tl-card::before { content: '2020 – 22'; }
+  .tl-item:nth-child(3) .tl-card::before { content: '2023'; }
+  .tl-item:nth-child(4) .tl-card::before { content: '2023 – 24'; }
+  .tl-item:nth-child(5) .tl-card::before { content: '2024 – NOW'; }
+  .tl-certs {
+    padding-left: 30px;
+  }
 }
 
 /* ---------- Skills ---------- */

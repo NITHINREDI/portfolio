@@ -39,7 +39,7 @@ const projects = [
     year: '2024',
     blurb:
       'Led migration of legacy logging stack to Datadog across multiple Java microservices. Standardized structured logging, custom metrics, and SLO dashboards — cutting MTTR on production incidents.',
-    stack: ['Instana', 'Datadog', 'Terraform'],
+    stack: ['Java', 'Spring Boot', 'Datadog', 'Terraform'],
   },
   {
     n: '03',
@@ -63,7 +63,7 @@ const projects = [
     n: '05',
     title: 'C# → Java Platform Migration',
     org: 'S&S Activewear',
-    year: '2023',
+    year: '2024',
     blurb:
       'Migrated a core inventory service from a legacy C#/.NET stack to Java/Spring Boot. Designed contract tests to keep downstream consumers green throughout cutover.',
     stack: ['Java', 'Spring Boot', 'C#', 'Pact'],
@@ -71,7 +71,7 @@ const projects = [
 ]
 
 const skills = {
-  Languages: ['Java', 'Python','GO', 'TypeScript', 'C#', 'SQL'],
+  Languages: ['Java', 'Python', 'TypeScript', 'C#', 'SQL'],
   'Frameworks & Runtimes': ['Spring Boot', 'React', 'Node.js', '.NET'],
   'Cloud & Infra': ['AWS (Certified Dev Assoc.)', 'Kubernetes', 'Terraform', 'Docker'],
   'Data & Streaming': ['Kafka', 'PostgreSQL', 'Redis', 'OpenSearch'],
@@ -96,7 +96,7 @@ export default function App() {
           <a href="#skills">Stack</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="resume-btn" href="/Nithin_reddy_resume.pdf" target="_blank" rel="noreferrer">
+        <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noreferrer">
           Résumé →
         </a>
       </header>
@@ -113,11 +113,13 @@ export default function App() {
               Building what runs in production — <em>backend systems</em>, <em>pipelines</em>, and <em>applied AI</em>.
             </h1>
             <p className="hero-sub">
-              I'm Nithin. I've built and scaled backend systems at Capital One, Discover, and S&S Activewear — spanning distributed architecture, observability, and applied AI. AWS-certified.Outside of my career, you can usually find me playing pickleball, tennis, chess, poker, ... you name it. I love competition
+              I'm Nithin — a software engineer focused on distributed systems, observability,
+              and applied LLMs. Previously at S&amp;S Activewear and DXC Technology. AWS-certified.
+              Currently exploring senior backend and platform roles.
             </p>
           </div>
           <div className="hero-photo">
-            <img src="/Profile.JPG" alt="Nithin" />
+            <img src="/profile.png" alt="Nithin" />
           </div>
         </div>
       </section>
@@ -156,19 +158,65 @@ export default function App() {
           <span className="section-num">/ 02</span>
           <h2>About</h2>
         </div>
-        <div className="about-grid">
-          <p>
-            I'm a software engineer at <strong>Capital One</strong> in Chicago, where I work on
-            backend services, CI/CD reliability, and a growing slate of GenAI tooling. Before that
-            I shipped Java services at S&amp;S Activewear and consulted at DXC Technology.
-          </p>
-          <p>
-            I studied at <strong>Stony Brook University</strong> and hold AWS Developer Associate
-            and AWS AI Practitioner certifications. I care a lot about clean abstractions,
-            structured observability, and writing the kind of code that the on-call engineer at
-            3 a.m. will actually thank you for.
-          </p>
+        <div className="timeline">
+          <div className="tl-item">
+            <div className="tl-left">
+              <span className="tl-year">2022 – 23</span>
+            </div>
+            <div className="tl-line">
+              <span className="tl-dot" />
+            </div>
+            <div className="tl-card tl-edu">
+              <h3>Stony Brook University</h3>
+              <p>MS in Computer Science · 4.0/4.0 GPA</p>
+            </div>
+          </div>
 
+          <div className="tl-item">
+            <div className="tl-left">
+              <span className="tl-year">2020 – 22</span>
+            </div>
+            <div className="tl-line">
+              <span className="tl-dot" />
+            </div>
+            <div className="tl-card">
+              <h3>DXC Technology</h3>
+              <p>Java · Spark · React.js · Airflow · SQL · AWS</p>
+            </div>
+          </div>
+
+          <div className="tl-item">
+            <div className="tl-left">
+              <span className="tl-year">Jan – Apr 2024</span>
+            </div>
+            <div className="tl-line">
+              <span className="tl-dot" />
+            </div>
+            <div className="tl-card">
+              <h3>S&amp;S Activewear</h3>
+              <p>Java · C# · MongoDB · AWS EKS · JIT · SQL </p>
+            </div>
+          </div>
+
+
+
+          <div className="tl-item tl-current">
+            <div className="tl-left">
+              <span className="tl-year">2024 – now</span>
+            </div>
+            <div className="tl-line">
+              <span className="tl-dot tl-dot-active" />
+            </div>
+            <div className="tl-card tl-card-active">
+              <h3>Capital One</h3>
+              <p>Java · Spring Boot · AWS · Python · Javascript · SQL · GenAI/LLM</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="tl-certs">
+          <span className="tl-cert">AWS Developer Associate</span>
+          <span className="tl-cert">AWS AI Practitioner</span>
         </div>
       </section>
 
