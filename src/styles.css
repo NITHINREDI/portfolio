@@ -445,8 +445,8 @@ a {
     display: block;
     margin-bottom: 8px;
   }
-  .tl-item:nth-child(1) .tl-card::before { content: 'JAN 2022 – MAY 23'; }
-  .tl-item:nth-child(2) .tl-card::before { content: 'JAN 2020 – JAN 22'; }
+  .tl-item:nth-child(2) .tl-card::before { content: 'JAN 2022 – MAY 23'; }
+  .tl-item:nth-child(1) .tl-card::before { content: 'JAN 2020 – JAN 22'; }
   .tl-item:nth-child(3) .tl-card::before { content: 'JAN – APR 2024'; }
   .tl-item:nth-child(4) .tl-card::before { content: 'APR 2024 – NOW'; }
   .tl-certs {

@@ -162,18 +162,6 @@ export default function App() {
           <h2>About</h2>
         </div>
         <div className="timeline">
-          <div className="tl-item">
-            <div className="tl-left">
-              <span className="tl-year">Jan 2022 – May 23</span>
-            </div>
-            <div className="tl-line">
-              <span className="tl-dot" />
-            </div>
-            <div className="tl-card tl-edu">
-              <h3>Stony Brook University</h3>
-              <p>MS in Computer Science · 4.0/4.0 GPA</p>
-            </div>
-          </div>
 
           <div className="tl-item">
             <div className="tl-left">
@@ -187,6 +175,21 @@ export default function App() {
               <p>Java · Spark · React.js · Airflow · SQL · AWS</p>
             </div>
           </div>
+
+          <div className="tl-item">
+            <div className="tl-left">
+              <span className="tl-year">Jan 2022 – May 23</span>
+            </div>
+            <div className="tl-line">
+              <span className="tl-dot" />
+            </div>
+            <div className="tl-card tl-edu">
+              <h3>Stony Brook University</h3>
+              <p>MS in Computer Science · 4.0/4.0 GPA</p>
+            </div>
+          </div>
+
+
 
           <div className="tl-item">
             <div className="tl-left">
