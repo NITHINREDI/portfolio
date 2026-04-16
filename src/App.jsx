@@ -1,5 +1,27 @@
 import { useEffect, useState } from 'react'
 
+const EmailIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+)
+
+const LinkedInIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect x="2" y="9" width="4" height="12" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+)
+
+const GitHubIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+    <path d="M9 18c-4.51 2-5-2-7-2" />
+  </svg>
+)
+
 const projects = [
   {
     n: '01',
@@ -17,7 +39,7 @@ const projects = [
     year: '2024',
     blurb:
       'Led migration of legacy logging stack to Datadog across multiple Java microservices. Standardized structured logging, custom metrics, and SLO dashboards — cutting MTTR on production incidents.',
-    stack: ['Java', 'Spring Boot', 'Datadog', 'Terraform'],
+    stack: ['Instana', 'Datadog', 'Terraform'],
   },
   {
     n: '03',
@@ -49,7 +71,7 @@ const projects = [
 ]
 
 const skills = {
-  Languages: ['Java', 'Python', 'TypeScript', 'C#', 'SQL'],
+  Languages: ['Java', 'Python','GO', 'TypeScript', 'C#', 'SQL'],
   'Frameworks & Runtimes': ['Spring Boot', 'React', 'Node.js', '.NET'],
   'Cloud & Infra': ['AWS (Certified Dev Assoc.)', 'Kubernetes', 'Terraform', 'Docker'],
   'Data & Streaming': ['Kafka', 'PostgreSQL', 'Redis', 'OpenSearch'],
@@ -74,27 +96,30 @@ export default function App() {
           <a href="#skills">Stack</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noreferrer">
+        <a className="resume-btn" href="/Nithin_reddy_resume.pdf" target="_blank" rel="noreferrer">
           Résumé →
         </a>
       </header>
 
       <section className="hero">
-        <div className="hero-meta">
-          <span>Software Engineer</span>
-          <span>Chicago, IL</span>
-          <span>Available · Open to SDE 2 roles</span>
+        <div className="hero-inner">
+          <div className="hero-text">
+            <div className="hero-meta">
+              <span>Software Engineer</span>
+              <span>Chicago, IL</span>
+              <span>Available · Open to SDE 2 roles</span>
+            </div>
+            <h1 className="hero-title">
+              Building what runs in production — <em>backend systems</em>, <em>pipelines</em>, and <em>applied AI</em>.
+            </h1>
+            <p className="hero-sub">
+              I'm Nithin. I've built and scaled backend systems at Capital One, Discover, and S&S Activewear — spanning distributed architecture, observability, and applied AI. AWS-certified.Outside of my career, you can usually find me playing pickleball, tennis, chess, poker, ... you name it. I love competition
+            </p>
+          </div>
+          <div className="hero-photo">
+            <img src="/Profile.JPG" alt="Nithin" />
+          </div>
         </div>
-        <h1 className="hero-title">
-          Building <em>resilient</em> backend systems<br />
-          and <em>practical</em> AI tooling<br />
-          at <span className="hl">Capital One</span>.
-        </h1>
-        <p className="hero-sub">
-          I'm Nithin — a software engineer focused on distributed systems, observability,
-          and applied LLMs. Previously at S&amp;S Activewear and DXC Technology. AWS-certified.
-          Currently exploring senior backend and platform roles.
-        </p>
       </section>
 
       <section id="work" className="section">
@@ -143,11 +168,7 @@ export default function App() {
             structured observability, and writing the kind of code that the on-call engineer at
             3 a.m. will actually thank you for.
           </p>
-          <p>
-            Outside of work I'm prepping for senior interviews — system design, DSA, and the
-            behavioral side of engineering leadership. I'm currently open to SDE 2 / senior
-            backend roles with visa sponsorship.
-          </p>
+
         </div>
       </section>
 
@@ -173,16 +194,19 @@ export default function App() {
         </div>
         <div className="contact-grid">
           <a className="contact-card" href="mailto:nithinreddysbu@gmail.com">
+            <span className="cc-icon"><EmailIcon /></span>
             <span className="cc-label">Email</span>
             <span className="cc-value">nithinreddysbu@gmail.com</span>
             <span className="cc-arrow">→</span>
           </a>
-          <a className="contact-card" href="www.linkedin.com/in/nithin-reddy-b341a8158" target="_blank" rel="noreferrer">
+          <a className="contact-card" href="https://www.linkedin.com/in/nithin-reddy-b341a8158" target="_blank" rel="noreferrer">
+            <span className="cc-icon"><LinkedInIcon /></span>
             <span className="cc-label">LinkedIn</span>
             <span className="cc-value">/in/Nithin</span>
             <span className="cc-arrow">→</span>
           </a>
           <a className="contact-card" href="https://github.com/NITHINREDI" target="_blank" rel="noreferrer">
+            <span className="cc-icon"><GitHubIcon /></span>
             <span className="cc-label">GitHub</span>
             <span className="cc-value">@Nithin</span>
             <span className="cc-arrow">→</span>
