@@ -96,7 +96,7 @@ export default function App() {
           <a href="#skills">Stack</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noreferrer">
+        <a className="resume-btn" href="Nithin_reddy_resume.pdf" target="_blank" rel="noreferrer">
           Résumé →
         </a>
       </header>
