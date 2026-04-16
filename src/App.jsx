@@ -109,17 +109,20 @@ export default function App() {
               <span>Chicago, IL</span>
               <span>Available · Open to SDE 2 roles</span>
             </div>
-            <h1 className="hero-title">
-              Building what runs in production — <em>backend systems</em>, <em>pipelines</em>, and <em>applied AI</em>.
-            </h1>
-            <p className="hero-sub">
-              I'm Nithin — a software engineer focused on distributed systems, observability,
-              and applied LLMs. Previously at S&amp;S Activewear and DXC Technology. AWS-certified.
-              Currently exploring senior backend and platform roles.
+            <p className="hero-intro">
+              I'm <strong>Nithin</strong> — a software engineer who genuinely loves what I do.
+              I'm driven by hard problems: distributed systems at scale, production reliability,
+              and figuring out how to make AI tooling that engineers actually want to use.
+              I grew up in India, earned my <strong>Master's in CS from Stony Brook</strong> with
+              a 4.0, and have since built production systems at <strong>Capital One</strong>,
+              {' '}<strong>Discover</strong>, <strong>S&amp;S Activewear</strong>, and DXC Technology.
+              I'm based in Chicago and currently engineering backend services and GenAI tooling
+              at Capital One. Always building, always learning. Outside of work, you can usually
+              find me playing pickleball, tennis, chess, poker — you name it. I love competition.
             </p>
           </div>
           <div className="hero-photo">
-            <img src="/profile.png" alt="Nithin" />
+            <img src="/Profile.JPG" alt="Nithin" />
           </div>
         </div>
       </section>
