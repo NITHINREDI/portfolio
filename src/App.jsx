@@ -96,7 +96,7 @@ export default function App() {
           <a href="#skills">Stack</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="resume-btn" href="Nithin_reddy_resume.pdf" target="_blank" rel="noreferrer">
+        <a className="resume-btn" href="Nithin_ccc_FS.pdf" target="_blank" rel="noreferrer">
           Résumé →
         </a>
       </header>
@@ -190,7 +190,7 @@ export default function App() {
 
           <div className="tl-item">
             <div className="tl-left">
-              <span className="tl-year">Jan – Apr 2024</span>
+              <span className="tl-year">Jun 2023 – Apr 2024</span>
             </div>
             <div className="tl-line">
               <span className="tl-dot" />
