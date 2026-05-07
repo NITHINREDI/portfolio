@@ -57,7 +57,7 @@ const projects = [
     year: '2024',
     blurb:
       'Diagnosed and patched a rounding edge case in interest refund calculations affecting a small but measurable cohort of customer accounts. Wrote a backfill job and added regression tests.',
-    stack: ['Java', 'PostgreSQL', 'JUnit'],
+    stack: ['C#', 'PostgreSQL', 'NUnit'],
   },
   {
     n: '05',
@@ -66,14 +66,14 @@ const projects = [
     year: '2024',
     blurb:
       'Migrated a core inventory service from a legacy C#/.NET stack to Java/Spring Boot. Designed contract tests to keep downstream consumers green throughout cutover.',
-    stack: ['Java', 'Spring Boot', 'C#', 'Pact'],
+    stack: ['C#', 'CQRS', 'SQL'],
   },
 ]
 
 const skills = {
-  Languages: ['Java','C#','Python', 'TypeScript', 'SQL'],
-  'Frameworks & Runtimes': ['Spring Boot', 'React', 'Node.js', '.NET'],
-  'Cloud & Infra': ['AWS (Certified Dev Assoc.)', 'Kubernetes', 'Terraform', 'Docker'],
+  Languages: ['C#','Java','Python', 'TypeScript', 'SQL'],
+  'Frameworks & Runtimes': ['.NET','Spring Boot', 'React', 'Node.js'],
+  'Cloud & Infra': ['AWS (Certified Dev Assoc.)','Azure (Certified Dev Assoc.)', 'Kubernetes', 'Terraform', 'Docker'],
   'Data & Streaming': ['Kafka', 'PostgreSQL', 'Redis', 'OpenSearch'],
   'AI / ML': ['Bedrock', 'LangChain', 'ONNX', 'Prompt Engineering (AWS AI Practitioner)'],
 }
