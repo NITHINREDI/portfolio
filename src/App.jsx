@@ -71,7 +71,7 @@ const projects = [
 ]
 
 const skills = {
-  Languages: ['Java', 'Python', 'TypeScript', 'C#', 'SQL'],
+  Languages: ['Java','C#','Python', 'TypeScript', 'SQL'],
   'Frameworks & Runtimes': ['Spring Boot', 'React', 'Node.js', '.NET'],
   'Cloud & Infra': ['AWS (Certified Dev Assoc.)', 'Kubernetes', 'Terraform', 'Docker'],
   'Data & Streaming': ['Kafka', 'PostgreSQL', 'Redis', 'OpenSearch'],
@@ -171,7 +171,7 @@ export default function App() {
             </div>
             <div className="tl-card">
               <h3>DXC Technology</h3>
-              <p>Java · Spark · React.js · Airflow · SQL · AWS</p>
+              <p>Java · Dapper · React.js · Kubernetes · SQL · AWS</p>
             </div>
           </div>
 
@@ -212,7 +212,7 @@ export default function App() {
             </div>
             <div className="tl-card tl-card-active">
               <h3>Capital One</h3>
-              <p>Java · Spring Boot · AWS · Python · Javascript · SQL · GenAI/LLM</p>
+              <p>C# . CQRS . Java . SQL Server. AWS . NUnit . Python</p>
             </div>
           </div>
         </div>
